@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/authors.css">
+	<title>Rap2France Authors</title>
+</head>
+<body>
+	<div class="wrapper">
+	<!-- Side Nav -->
+	<nav id="sidebar">
+		<div id="dismiss">
+			<i class="fas fa-arrow-left"></i>
+		</div>
+		<div class="sidebar-header">
+			<a href="#"></a>
+		</div>
+		<ul class="r2f-side-nav list-unstyled components p-3">
+			<li class="r2f-border-bottom">
+				<a class="active" href="#">Home</a>
+			</li>
+			<li class="r2f-border-bottom">
+				<div class="accordion accordion-flush" id="accordionNav">
+					<div>
+						<a class="r2f-has-dropdown position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNav" id="flush-headingNav">Features</a>
+						<div id="flush-collapseNav" class="collapse">
+							<ul class="list-unstyled ps-3">
+								<li>
+									<a href="#">Unique Demos</a>
+								</li>
+								<li>
+									<a href="#">Post Style</a>
+								</li>
+								<li>
+									<div class="accordion accordion-flush" id="accordionSubNav">
+										<div class="">
+											<a class="r2f-has-dropdown position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSub" id="flush-headingSub">Sub Features</a>
+											<div id="flush-collapseSub" class="collapse">
+												<ul class="list-unstyled ps-3">
+													<li>
+														<a href="#">Unique Demos</a>
+													</li>
+													<li>
+														<a href="#">Post Style</a>
+													</li>
+													<li>
+														<a href="#">Header Style</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="r2f-border-bottom">
+				<a href="#">Portfolio</a>
+			</li>
+			<li class="r2f-border-bottom">
+				<a href="#">Contact</a>
+			</li>
+		</ul>
+		<div class="p-3 d-none d-lg-block">
+			<div class="r2f-siderbar-form p-3">
+				<form action="" method="">
+					<h2 class="h3 text-center">Subscribe to Updates</h2>
+					<p class="text-center py-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					<div class="pb-3">
+						<input type="email" class="rounded w-100 p-2 " id="">
+					</div>
+					<div class="pb-3">
+						<input type="submit" class="r2f-btn-global rounded w-100 py-2 fw-bold" name="" value="Subscribe">
+					</div>
+					<div class="form-check">
+						<input type="checkbox" class="form-check-input" id="">
+						<label class="form-check-label text-muted" for="">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</label>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="rft-social-icons pb-3">
+			<ul class="m-0 p-0 d-flex list-unstyled justify-content-center">
+				<li class="nav-item">
+					<a class="d-flex align-items-center justify-content-center" href="#"><i class="fab fa-facebook-f"></i></a>
+				</li>
+				<li class="nav-item">
+					<a class="d-flex align-items-center justify-content-center" href="#"><i class="fab fa-twitter"></i></a>
+				</li>
+				<li class="nav-item">
+					<a class="d-flex align-items-center justify-content-center" href="#"><i class="fab fa-instagram"></i></a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!-- Top Nav  -->
+	<nav class="r2f-nav-2 py-3 d-none d-lg-block">
+		<div class="container">
+			<div class="row w-100">
+				<div class="rft-social-icons col d-flex align-items-center">
+					<ul class="m-0 p-0 d-flex list-unstyled">
+						<li class="nav-item">
+							<a class="d-flex align-items-center justify-content-center" href="#"><i class="fab fa-facebook-f"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="d-flex align-items-center justify-content-center" href="#"><i class="fab fa-twitter"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="d-flex align-items-center justify-content-center" href="#"><i class="fab fa-instagram"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="d-flex align-items-center justify-content-center" href="#"><i class="fab fa-pinterest-p"></i></a>
+						</li>
+					</ul>
+				</div>
+				<div class="r2f-logo r2f-logo-main col">
+					<a class="mx-auto" href="#"></a>
+				</div>
+				<div class="col pt-2 col d-flex align-items-center justify-content-end">
+					<button class="r2f-btn-search btn"></button>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<nav id="nav-sticky" class="r2f-nav-3 sticky-top navbar navbar-expand-lg navbar-dark bg-dark pb-0 d-none d-lg-block">
+		<div class="container pe-0">
+			<div class="row w-100 position-relative">
+				<div class="col-auto pt-1">
+					<button type="button" id="sidebarCollapse" class="r2f-toggle btn"></button>
+				</div>
+				<div class="col d-flex justify-content-center">
+					<ul class="list-unstyled m-0 p-0 d-flex">
+						<li class="pe-2 pt-2 pb-3">
+							<a class="active r2r-nav-link" href="#">Accueil</a>
+						</li>
+						<li class="r2f-dropdown pe-3 pt-2 pb-3">
+							<a class="r2f-dropdown-icon r2r-nav-link position-relative" href="#">Rap Fr <i class="fas fa-chevron-down"></i></a>
+							<div class="r2f-mega-menu position-absolute text-white">
+								<div class="row">
+									<div class="r2f-mega-menu-cat col-2 border-end pe-3">
+										<ul class="m-0 pt-1 ps-4 list-unstyled">
+											<li>
+												<a class="py-2 ps-0" href="#">Mobiles</a>
+											</li>
+											<li>
+												<a class="py-2 ps-0" href="#">Lifestyle</a>
+											</li>
+											<li>
+												<a class="py-2 ps-0" href="#">Health</a>
+											</li>
+											<li>
+												<a class="py-2 ps-0" href="#">View All</a>
+											</li>
+										</ul>
+									</div>
+									<div class="col ps-3 pe-5">
+										<div class="row">
+											<div class="col">
+												<div class="r2f-mega-menu-post pt-3">
+													<a href="#">
+														<img class="img-fluid mb-2" src="images/consert-img.jpg">
+														<h2 class="h6 fw-bold">Bose Line of Products on the Show: Showroom Open in Dubai</h2>
+													</a>
+													<p class="text-muted">Jan 14, 2021</p>
+												</div>
+											</div>
+											<div class="col">
+												<div class="r2f-mega-menu-post pt-3">
+													<a href="#">
+														<img class="img-fluid mb-2" src="images/consert-img.jpg">
+														<h2 class="h6 fw-bold">Bose Line of Products on the Show: Showroom Open in Dubai</h2>
+													</a>
+													<p class="text-muted">Jan 14, 2021</p>
+												</div>
+											</div>
+											<div class="col">
+												<div class="r2f-mega-menu-post pt-3">
+													<a href="#">
+														<img class="img-fluid mb-2" src="images/consert-img.jpg">
+														<h2 class="h6 fw-bold">Bose Line of Products on the Show: Showroom Open in Dubai</h2>
+													</a>
+													<p class="text-muted">Jan 14, 2021</p>
+												</div>
+											</div>
+											<div class="col">
+												<div class="r2f-mega-menu-post pt-3">
+													<a href="#">
+														<img class="img-fluid mb-2" src="images/consert-img.jpg">
+														<h2 class="h6 fw-bold">Bose Line of Products on the Show: Showroom Open in Dubai</h2>
+													</a>
+													<p class="text-muted">Jan 14, 2021</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="pe-2 pt-2 pb-3">
+							<a class="r2r-nav-link" href="#">La Street</a>
+						</li>
+						<li class="pe-2 pt-2 pb-3">
+							<a class="r2r-nav-link" href="#">Lifestyle</a>
+						</li>
+						<li class="pe-2 pt-2 pb-3">
+							<a class="r2r-nav-link" href="#">Cine/Series</a>
+						</li>
+						<li class="py-2">
+							<a class="r2r-nav-link" href="#">Sport</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!-- Mobile Nav -->
+	<nav id="nav-sticky-mobile" class="r2f-mobile-nav sticky-top navbar-dark bg-dark d-lg-none">
+		<div class="container">
+			<div class="row">
+				<div class="col-auto d-flex align-items-center">
+					<button type="button" id="sidebarCollapse2" class="r2f-toggle btn"></button>
+				</div>
+				<div class="r2f-logo col py-2">
+					<a class="mx-auto" href="#"></a>
+				</div>
+				<div class="col-auto d-flex align-items-center justify-content-end">
+					<button class="r2f-btn-search btn"></button>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Content Area -->
+	<main>
+		<div class="container py-5">
+			<div class="row">
+				<div class="col-md-8 border-end pe-lg-4">
+					<div class="r2r-author-left-part">
+						<h1>Our Authors</h1>
+						<p class="mb-5">Here’s a list of all of our authors.</p>
+						<!-- About Author -->
+						<div class="border-bottom pb-5 mb-5">
+							<div class="row">
+								<div class="col-3 col-md-2">
+									<img src="images/bella-doe.jpg" class="img-fluid rounded-circle">
+								</div>
+								<div class="r2f-author-title col">
+									<div class="d-flex justify-content-between pb-2">
+										<h2 class="h6 fw-bold">Shane Doe</h2>
+										<ul class="list-unstyled m-0 d-flex">
+											<li class="pe-3">
+												<a href="#"><i class="fas fa-home"></i></a>
+											</li>
+											<li class="pe-3">
+												<a href="#"><i class="fab fa-facebook-f"></i></a>
+											</li>
+											<li class="pe-3">
+												<a href="#"><i class="fab fa-twitter"></i></a>
+											</li>
+											<li class="pe-3">
+												<a href="#"><i class="fab fa-pinterest-p"></i></a>
+											</li>
+											<li>
+												<a href="#"><i class="fab fa-instagram"></i></a>
+											</li>
+										</ul>
+									</div>
+									<p>I am an Example Writer. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labored et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+									<a href="#" class="r2f-btn-global text-uppercase py-2 px-3 rounded">50 Articles</a>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="row">
+								<div class="col-3 col-md-2">
+									<img src="images/jane-doe.jpg" class="img-fluid rounded-circle">
+								</div>
+								<div class="r2f-author-title col">
+									<div class="d-flex justify-content-between pb-2">
+										<h2 class="h6 fw-bold">Shane Doe</h2>
+										<ul class="list-unstyled m-0 d-flex">
+											<li class="pe-3">
+												<a href="#"><i class="fas fa-home"></i></a>
+											</li>
+											<li class="pe-3">
+												<a href="#"><i class="fab fa-facebook-f"></i></a>
+											</li>
+											<li class="pe-3">
+												<a href="#"><i class="fab fa-twitter"></i></a>
+											</li>
+											<li class="pe-3">
+												<a href="#"><i class="fab fa-pinterest-p"></i></a>
+											</li>
+											<li>
+												<a href="#"><i class="fab fa-instagram"></i></a>
+											</li>
+										</ul>
+									</div>
+									<p class="m-0">I am an Example Writer. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labored et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 ps-lg-4">
+					<div class="r2r-author-right">
+						<div class="pb-5">
+							<a href="#">
+								<img src="images/consert-img.jpg" class="img-fluid">
+							</a>
+						</div>
+						<div class="pb-4">
+							<h2 class="h6 text-uppercase bg-dark text-white mb-4 px-3 py-2">Our Picks</h2>
+							<div class="border-bottom pb-4 mb-4">
+								<div class="row">
+									<div class="col-5 pb-3 pb-sm-0">
+										<img src="images/post-3_2.jpg" class="img-fluid">
+									</div>
+									<div class="col d-flex align-items-center">
+										<div class="r2f-post-wrap">
+											<h3 class="h5"><a href="#">Lorem ipsum dolor sit amet</a></h3>
+											<p class="r2f-post-date mb-0"><a href="#" class="fst-italic text-muted">Nov 10, 2018</a></p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="border-bottom pb-4 mb-4">
+								<div class="row">
+									<div class="col-5 pb-3 pb-sm-0">
+										<img src="images/post-3_2.jpg" class="img-fluid">
+									</div>
+									<div class="col d-flex align-items-center">
+										<div class="r2f-post-wrap">
+											<h3 class="h5"><a href="#">Lorem ipsum dolor sit amet</a></h3>
+											<p class="r2f-post-date mb-0"><a href="#" class="fst-italic text-muted">Nov 10, 2018</a></p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="border-bottom pb-4 mb-4">
+								<div class="row">
+									<div class="col-5 pb-3 pb-sm-0">
+										<img src="images/post-3_2.jpg" class="img-fluid">
+									</div>
+									<div class="col d-flex align-items-center">
+										<div class="r2f-post-wrap">
+											<h3 class="h5"><a href="#">Lorem ipsum dolor sit amet</a></h3>
+											<p class="r2f-post-date mb-0"><a href="#" class="fst-italic text-muted">Nov 10, 2018</a></p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="mb-4">
+								<div class="row">
+									<div class="col-5 pb-3 pb-sm-0">
+										<img src="images/post-3_2.jpg" class="img-fluid">
+									</div>
+									<div class="col d-flex align-items-center">
+										<div class="r2f-post-wrap">
+											<h3 class="h5"><a href="#">Lorem ipsum dolor sit amet</a></h3>
+											<p class="r2f-post-date mb-0"><a href="#" class="fst-italic text-muted">Nov 10, 2018</a></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="r2f-authors-social justify-content-between pb-4">
+							<a href="#" class="text-white px-4 py-3 mb-3">
+								<span><i class="fab fa-facebook-f"></i></span>
+								<span class="ps-2">10k</span>
+								<span class="ps-2">Facebook</span>
+							</a>
+							<a href="#" class="text-white px-4 py-3 mb-3">
+								<span><i class="fab fa-twitter"></i></span>
+								<span class="ps-2">10k</span>
+								<span class="ps-2">Twitter</span>
+							</a>
+							<a href="#" class="text-white px-4 py-3 mb-3">
+								<span><i class="fab fa-pinterest-p"></i></span>
+								<span class="ps-2">10k</span>
+								<span class="ps-2">Pinterest</span>
+							</a>
+							<a href="#" class="text-white px-4 py-3 mb-3">
+								<span><i class="fab fa-instagram"></i></i></span>
+								<span class="ps-2">10k</span>
+								<span class="ps-2">Instagram</span>
+							</a>
+							<a href="#" class="text-white px-4 py-3 mb-3">
+								<span><i class="fab fa-youtube"></i></span>
+								<span class="ps-2">10k</span>
+								<span class="ps-2">Youtube</span>
+							</a>
+							<a href="#" class="text-white px-4 py-3 mb-3">
+								<span><i class="fab fa-vimeo-v"></i></span>
+								<span class="ps-2">10k</span>
+								<span class="ps-2">Vimeo</span>
+							</a>
+						</div>
+						<div class="pb-5">
+							<h2 class="h6 text-uppercase bg-dark text-white mb-4 px-3 py-2">Don't miss</h2>
+							<div class="r2f-post-wrap">
+								<div class="position-relative">
+									<img src="images/post-3_2.jpg" class="img-fluid">
+									<p class="r2f-post-meta position-absolute m-0 p-0 text-uppercase "><a href="#" class="r2f-post-meta-fashion">Fashion</a></p>
+								</div>
+								<div class="pt-3 mb-4">
+									<h3 class="h4"><a href="#">Discovering Sydney’s See Attractions line</a></h3>
+									<p class="r2f-post-author mb-0"><i class="fas fa-user me-2"></i>By<a href="#">Jawn Staff</a> - <a href="#" class="fst-italic">Nov 10, 2018</a></p>
+								</div>
+							</div>
+							<div class="row pb-3">
+								<div class="col-5 pb-3 pb-sm-0">
+									<img src="images/post-3_2.jpg" class="img-fluid">
+								</div>
+								<div class="col d-flex align-items-center">
+									<div class="r2f-post-wrap">
+										<h3 class="h5"><a href="#">Lorem ipsum dolor sit amet</a></h3>
+										<p class="r2f-post-date mb-0"><a href="#" class="fst-italic text-muted">Nov 10, 2018</a></p>
+									</div>
+								</div>
+							</div>
+							<div class="row pb-3">
+								<div class="col-5 pb-3 pb-sm-0">
+									<img src="images/post-3_2.jpg" class="img-fluid">
+								</div>
+								<div class="col d-flex align-items-center">
+									<div class="r2f-post-wrap">
+										<h3 class="h5"><a href="#">Lorem ipsum dolor sit amet</a></h3>
+										<p class="r2f-post-date mb-0"><a href="#" class="fst-italic text-muted">Nov 10, 2018</a></p>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-5 pb-3 pb-sm-0">
+									<img src="images/post-3_2.jpg" class="img-fluid">
+								</div>
+								<div class="col d-flex align-items-center">
+									<div class="r2f-post-wrap">
+										<h3 class="h5"><a href="#">Lorem ipsum dolor sit amet</a></h3>
+										<p class="r2f-post-date mb-0"><a href="#" class="fst-italic text-muted">Nov 10, 2018</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="r2f-form-wrap p-2">
+							<form class="p-5 border bg-white" action="" method="">
+								<p class="h4 fw-bold text-uppercase pb-4 text-dark text-center">Get the best viral stories straight into your inbox</p>
+								<div class="pb-3">
+									<input type="email" class="w-100 p-2 text-center border text-dark" id="" placeholder="Your email address">
+								</div>
+								<div class="pb-3">
+									<input type="submit" class="r2f-btn-global rounded w-100 py-2 fw-bold" name="" value="Subscribe">
+								</div>
+								<div class="form-check text-center">
+									<input type="checkbox" class="form-check-input" id="">
+									<label class="form-check-label text-muted" for="">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</label>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!-- Footer -->
+	<footer class="bg-dark pt-5 pb-4">
+		<div class="container">
+			<div class="r2f-footer-logo pb-3">
+				<a href="#" class="mx-auto"></a>
+			</div>
+			<div class="rft-social-icons pb-3">
+				<ul class="m-0 p-0 d-flex list-unstyled justify-content-center">
+					<li class="nav-item">
+						<a class="d-flex align-items-center justify-content-center" href="#"><i class="fab fa-facebook-f"></i></a>
+					</li>
+					<li class="nav-item">
+						<a class="d-flex align-items-center justify-content-center" href="#"><i class="fab fa-twitter"></i></a>
+					</li>
+					<li class="nav-item">
+						<a class="d-flex align-items-center justify-content-center" href="#"><i class="fab fa-instagram"></i></a>
+					</li>
+					<li class="nav-item">
+						<a class="d-flex align-items-center justify-content-center" href="#"><i class="fab fa-pinterest-p"></i></a>
+					</li>
+				</ul>
+			</div>
+			<div class="r2f-footer-menu pb-4">
+				<ul class="m-0 p-0 d-flex list-unstyled justify-content-center">
+					<li class="pe-3"><a href="#">Home</a></li>
+					<li class="pe-3"><a href="#">Health</a></li>
+					<li class="pe-3"><a href="#">Travel</a></li>
+					<li class="pe-3"><a href="#">Sports</a></li>
+					<li class="pe-3"><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+			<div>
+				<p class="text-white text-center"><span class="text-muted">@2021 Lorem ipsum dolor sit amet. </span>Lorem Ipsum</p>
+			</div>
+		</div>
+	</footer>
+	</div>
+	<div class="overlay"></div>
+	<!-- JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

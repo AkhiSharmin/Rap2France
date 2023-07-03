@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/news.css">
+	<title>Rap2France News</title>
+</head>
+<body>
+	<div class="wrapper">
+	<!-- Side Nav -->
+	<nav id="sidebar">
+		<div id="dismiss">
+			<i class="fas fa-arrow-left"></i>
+		</div>
+		<div class="sidebar-header">
+			<a href="#"></a>
+		</div>
+		<ul class="r2f-side-nav list-unstyled components p-3">
+			<li class="r2f-border-bottom">
+				<a class="active" href="#">Home</a>
+			</li>
+			<li class="r2f-border-bottom">
+				<div class="accordion accordion-flush" id="accordionNav">
+					<div>
+						<a class="r2f-has-dropdown position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNav" id="flush-headingNav">Features</a>
+						<div id="flush-collapseNav" class="collapse">
+							<ul class="list-unstyled ps-3">
+								<li>
+									<a href="#">Unique Demos</a>
+								</li>
+								<li>
+									<a href="#">Post Style</a>
+								</li>
+								<li>
+									<div class="accordion accordion-flush" id="accordionSubNav">
+										<div class="">
+											<a class="r2f-has-dropdown position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSub" id="flush-headingSub">Sub Features</a>
+											<div id="flush-collapseSub" class="collapse">
+												<ul class="list-unstyled ps-3">
+													<li>
+														<a href="#">Unique Demos</a>
+													</li>
+													<li>
+														<a href="#">Post Style</a>
+													</li>
+													<li>
+														<a href="#">Header Style</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="r2f-border-bottom">
+				<a href="#">Portfolio</a>
+			</li>
+			<li class="r2f-border-bottom">
+				<a href="#">Contact</a>
+			</li>
+		</ul>
+		<div class="p-3 d-none d-lg-block">
+			<div class="r2f-siderbar-form p-3">
+				<form action="" method="">
+					<h2 class="h3 text-center">Subscribe to Updates</h2>
+					<p class="text-center py-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					<div class="pb-3">
+						<input type="email" class="rounded w-100 p-2 " id="">
+					</div>
+					<div class="pb-3">
+						<input type="submit" class="r2f-btn-global rounded w-100 py-2 fw-bold" name="" value="Subscribe">
+					</div>
+					<div class="form-check">
+						<input type="checkbox" class="form-check-input" id="">
+						<label class="form-check-label text-muted" for="">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</label>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="rft-social-icons pb-3">
+			<ul class="m-0 p-0 d-flex list-unstyled justify-content-center">
+				<li class="nav-item">
+					<a class="d-flex align-items-center justify-content-center" href="#"><i class="fab fa-facebook-f"></i></a>
+				</li>
+				<li class="nav-item">
+					<a class="d-flex align-items-center justify-content-center" href="#"><i class="fab fa-twitter"></i></a>
+				</li>
+				<li class="nav-item">
+					<a class="d-flex align-items-center justify-content-center" href="#"><i class="fab fa-instagram"></i></a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!-- Top Nav  -->
+	<nav class="r2f-nav-2 py-3 d-none d-lg-block">
+		<div class="container">
+			<div class="row w-100">
+				<div class="rft-social-icons col d-flex align-items-center">
+					<ul class="m-0 p-0 d-flex list-unstyled">
+						<li class="nav-item">
+							<a class="d-flex align-items-center justify-content-center" href="#"><i class="fab fa-facebook-f"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="d-flex align-items-center justify-content-center" href="#"><i class="fab fa-twitter"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="d-flex align-items-center justify-content-center" href="#"><i class="fab fa-instagram"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="d-flex align-items-center justify-content-center" href="#"><i class="fab fa-pinterest-p"></i></a>
+						</li>
+					</ul>
+				</div>
+				<div class="r2f-logo r2f-logo-main col">
+					<a class="mx-auto" href="#"></a>
+				</div>
+				<div class="col pt-2 col d-flex align-items-center justify-content-end">
+					<button class="r2f-btn-search btn"></button>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<nav id="nav-sticky" class="r2f-nav-3 sticky-top navbar navbar-expand-lg navbar-dark bg-dark pb-0 d-none d-lg-block">
+		<div class="container pe-0">
+			<div class="row w-100 position-relative">
+				<div class="col-auto pt-1">
+					<button type="button" id="sidebarCollapse" class="r2f-toggle btn"></button>
+				</div>
+				<div class="col d-flex justify-content-center">
+					<ul class="list-unstyled m-0 p-0 d-flex">
+						<li class="pe-2 pt-2 pb-3">
+							<a class="active r2r-nav-link" href="#">Accueil</a>
+						</li>
+						<li class="r2f-dropdown pe-3 pt-2 pb-3">
+							<a class="r2f-dropdown-icon r2r-nav-link position-relative" href="#">Rap Fr <i class="fas fa-chevron-down"></i></a>
+							<div class="r2f-mega-menu position-absolute text-white">
+								<div class="row">
+									<div class="r2f-mega-menu-cat col-2 border-end pe-3">
+										<ul class="m-0 pt-1 ps-4 list-unstyled">
+											<li>
+												<a class="py-2 ps-0" href="#">Mobiles</a>
+											</li>
+											<li>
+												<a class="py-2 ps-0" href="#">Lifestyle</a>
+											</li>
+											<li>
+												<a class="py-2 ps-0" href="#">Health</a>
+											</li>
+											<li>
+												<a class="py-2 ps-0" href="#">View All</a>
+											</li>
+										</ul>
+									</div>
+									<div class="col ps-3 pe-5">
+										<div class="row">
+											<div class="col">
+												<div class="r2f-mega-menu-post pt-3">
+													<a href="#">
+														<img class="img-fluid mb-2" src="images/consert-img.jpg">
+														<h2 class="h6 fw-bold">Bose Line of Products on the Show: Showroom Open in Dubai</h2>
+													</a>
+													<p class="text-muted">Jan 14, 2021</p>
+												</div>
+											</div>
+											<div class="col">
+												<div class="r2f-mega-menu-post pt-3">
+													<a href="#">
+														<img class="img-fluid mb-2" src="images/consert-img.jpg">
+														<h2 class="h6 fw-bold">Bose Line of Products on the Show: Showroom Open in Dubai</h2>
+													</a>
+													<p class="text-muted">Jan 14, 2021</p>
+												</div>
+											</div>
+											<div class="col">
+												<div class="r2f-mega-menu-post pt-3">
+													<a href="#">
+														<img class="img-fluid mb-2" src="images/consert-img.jpg">
+														<h2 class="h6 fw-bold">Bose Line of Products on the Show: Showroom Open in Dubai</h2>
+													</a>
+													<p class="text-muted">Jan 14, 2021</p>
+												</div>
+											</div>
+											<div class="col">
+												<div class="r2f-mega-menu-post pt-3">
+													<a href="#">
+														<img class="img-fluid mb-2" src="images/consert-img.jpg">
+														<h2 class="h6 fw-bold">Bose Line of Products on the Show: Showroom Open in Dubai</h2>
+													</a>
+													<p class="text-muted">Jan 14, 2021</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="pe-2 pt-2 pb-3">
+							<a class="r2r-nav-link" href="#">La Street</a>
+						</li>
+						<li class="pe-2 pt-2 pb-3">
+							<a class="r2r-nav-link" href="#">Lifestyle</a>
+						</li>
+						<li class="pe-2 pt-2 pb-3">
+							<a class="r2r-nav-link" href="#">Cine/Series</a>
+						</li>
+						<li class="py-2">
+							<a class="r2r-nav-link" href="#">Sport</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!-- Mobile Nav -->
+	<nav id="nav-sticky-mobile" class="r2f-mobile-nav sticky-top navbar-dark bg-dark d-lg-none">
+		<div class="container">
+			<div class="row">
+				<div class="col-auto d-flex align-items-center">
+					<button type="button" id="sidebarCollapse2" class="r2f-toggle btn"></button>
+				</div>
+				<div class="r2f-logo col py-2">
+					<a class="mx-auto" href="#"></a>
+				</div>
+				<div class="col-auto d-flex align-items-center justify-content-end">
+					<button class="r2f-btn-search btn"></button>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Content Area -->
+	<main class="pb-5">
+		<div class="container">
+			<nav aria-label="breadcrumb text-muted">
+				<ol class="breadcrumb m-0 pt-3 pb-5">
+					<li class="breadcrumb-item"><a href="/">Home</a></li>
+					<li class="breadcrumb-item"><a href="#">Library</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Post Page</li>
+				</ol>
+			</nav>
+			<p class="r2f-post-meta mb-3 p-0"><a href="#" class="r2f-post-meta-design">Design</a></p>
+			<div class="r2f-post-content">
+				<!-- Post Headline -->
+				<h1 class="fw-bold">Mercedes’ Lead Designer Talks to Euronews About Future</h1>
+				<p class="fs-5 text-muted">Having not yet visited Sector 10, follow these steps for a free upgrade.</p>
+				<!-- Post Author -->
+				<div class="r2f-author align-items-center pb-4">
+					<img src="images/bella-doe.jpg" class="img-fluid rounded-circle me-3">
+					<p class="text-muted m-0">
+						<span>By</span>
+						<a href="#" class="text-dark">Shane Doe</a>
+						<span> - Jan 13, 2021</span>
+						<span class="pe-3"> - Updated: Jan 13, 2021</span>
+						<a href="#" class="text-muted"><i class="far fa-comment"></i> 3 comments</a>
+						<span class="ps-3"><i class="far fa-clock"></i> 6 Mins Read</span>
+					</p>
+				</div>
+				<!-- Post Social Share -->
+				<div class="row">
+					<div class="col-lg-8 border-end pe-lg-4">
+						<div class="r2f-social-share justify-content-between pb-4">
+							<a href="#" class="text-white px-3 py-2 mb-3">
+								<span><i class="fab fa-facebook-f"></i></span>
+								<span class="ps-2">Facebook</span>
+							</a>
+							<a href="#" class="text-white px-3 py-2 mb-3">
+								<span><i class="fab fa-twitter"></i></span>
+								<span class="ps-2">Twitter</span>
+							</a>
+							<a href="#" class="text-white px-3 py-2 mb-3">
+								<span><i class="fab fa-pinterest-p"></i></span>
+								<span class="ps-2">Pinterest</span>
+							</a>
+							<a href="#" class="text-white px-3 py-2 mb-3">
+								<span><i class="fab fa-instagram"></i></i></span>
+								<span class="ps-1">Instagram</span>
+							</a>
+							<a href="#" class="text-white px-3 py-2 mb-3">
+								<span><i class="fab fa-youtube"></i></span>
+								<span class="ps-2">Youtube</span>
+							</a>
+							<a href="#" class="text-white px-3 py-2 mb-3">
+								<span><i class="fab fa-vimeo-v"></i></span>
+								<span class="ps-2">Vimeo</span>
+							</a>
+						</div>
+						<div class="r2f-post-content-wrap">
+							<!-- Post Content Start -->
+							<img src="images/post-3_2.jpg" class="img-fluid">
+							<p class="px-4 pt-4">To understand the new smart watched and other pro devices of recent focus, we should look to Silicon Valley and the quantified movement of the latest generation.</p>
+							<p class="px-4 ">Apple’s Watch records exercise, tracks our moves throughout the day, assesses the amount of time we are stood up and reminds us to get up and move around if we have been sat for too long – let’s not forget Tim Cook’s “sitting is the new factor” line.</p>
+							<p class="px-4 ">As you’re tapping, scrolling, and swiping on your phone, you probably don’t give much thought to the fact that your apps are consuming electricity – just that they’re chipping away at your battery life.</p>
+							<p class="px-4">It’s <em>engaging</em>. It’s <span class="fw-bold">hopeful</span>. It pushes the plot forward.</p>
+							<div class="r2f-quotes px-4 py-3">
+								<blockquote class="ps-5 position-relative">
+									<p>Only a quarter of young adults are financially literate. You don’t want to overwhelm them with terrible advice. Best to keep them on track.</p>
+									<cite class="text-muted text-uppercase">- JOHN MCCARTHY</cite>
+								</blockquote>
+							</div>
+							<p class="px-4">Before you click away, disappointed that I brought up something as practical and boring as time management, hear me out. My intent is not to crush your spirits.</p>
+							<h2 class="p-4 fw-bold">Greatness Awaits You</h2>
+							<p class="px-4">The average U.S. iPhone owner uses 1-2 gigabytes of LTE data per month, according to some studies. That data comes at an energy cost that’s opaque, because we can’t see it directly.</p>
+							<p class="px-4">You can’t look to your peers in the industry, because all they’re going to tell you is that they are killing it, crushing it, changing the world.</p>
+							<p class="px-4 pb-3 fw-bold">Also Read: <a href="#"> Journey towards Design Perfection with Google Studio</a></p>
+							<figure>
+								<img src="images/post-3_2.jpg" class="img-fluid">
+								<figcaption class="text-center text-muted py-2">Smart Tech just keeps getting Smarter.</figcaption>
+							</figure>
+							<p class="px-4">To its detractors, love at first sight must be an illusion – the wrong term for what is simply infatuation, or a way to sugarcoat lust.</p>
+							<ul class="m-0 px-5">
+								<li>
+									<p><span class="fw-bold">Take a social media hiatus.</span> According to a recent survey from Everyday Health, 60 to 70 percent of young adults say they check their social media platforms at least daily. Why not dial that back for the holidays?</p>
+								</li>
+								<li>
+									<p><span class="fw-bold">Take a social media hiatus.</span> According to a recent survey from Everyday Health, 60 to 70 percent of young adults say they check their social media platforms at least daily. Why not dial that back for the holidays?</p>
+								</li>
+								<li>
+									<p><span class="fw-bold">Take a social media hiatus.</span> According to a recent survey from Everyday Health, 60 to 70 percent of young adults say they check their social media platforms at least daily. Why not dial that back for the holidays?</p>
+								</li>
+							</ul>
+							<p class="px-4">The truth, of course, is that these people have been lying to you all along.</p>
+							<p class="px-5 text-center fs-4">Sixty percent of Africans are under the age of 25. To see Africa through their eyes is to see a continent brimming with potential and opportunity: https://t.co/Sgxobv2iga pic.twitter.com/3NvQOwwTb5 — Bill Gates (@BillGates) September 10, 2018</p>
+							<p class="px-4">A federal government initiated report conducted by the Allen Consulting Group released in July 2011 proposed, amongst other detail, various standards of reporting criteria ranging from voluntary to a comprehensive evaluation conducted by qualified energy rating assessors.</p>
+							<h2 class="p-4 fw-bold">Vanity is the Healthiest Thing in Life</h2>
+							<p class="px-4">There were a lot of cut outs in the waists of gowns at the Critics’ Choice Awards and there were mostly chic and fun with a little peak of skin. This is not a little peak.</p>
+							<div class="row gx-1">
+								<div class="col-md-4">
+									<figure>
+										<img src="images/pexels-marcus-aurelius.webp" class="img-fluid">
+										<figcaption class="text-center text-muted py-2">Remote work is quite blissful.</figcaption>
+									</figure>
+								</div>
+								<div class="col-md-8">
+									<p class="px-4">They will all come together to decide the winner of the prize, which was won last year by British menswear designer Grace Wales Bonner. The successful candidate will be given a $300,000 grant and year-long business mentorship, helping them to develop every area of their brand.</p>
+									<p class="px-4 fw-bold">Coverage: <a href="#">50 Ways to Wear a Hat</a></p>
+									<p class="px-4">We like the idea of a long top over pants – it’s nervy – but the combo of no straps, very long layers of ruffling and her cleavage looking smashed the latest records.</p>
+									<p class="px-4">This is reflected in the basic idea to Kate Ballis’ photo series Beaches Above. By shooting the world from a bird’s eye. Success isn’t about the end result, it’s about what you learn along the way. </p>
+								</div>
+							</div>
+							<p class="px-4 pb-4">Facebook has been less active than Google on the public relations front, but has joined its lobbying efforts – going as far as hiring experienced lobbyists who know Prime Minister Scott Morrison personally.</p>
+							<div class="p-4 mb-5 bg-light">
+								<h3 class="mb-4 h4">Here’s what we know – and don’t – about Tech’s Novel Use.</h3>
+								<ul class="m-0 px-5">
+									<li>
+										<p>Joe Doe tested negative for Tech Literacy.</p>
+									</li>
+									<li>
+										<p>Shane’s diagnosis could spell disaster for his campaign.</p>
+									</li>
+									<li>
+										<p>The Shane team is on guard against foreign adversaries who could exploit the lack of tech literacy.</p>
+									</li>
+								</ul>
+							</div>
+							<!-- END Post Content -->
+							<!-- Post Tags -->
+							<div class="r2f-post-tags">
+								<ul class="m-0 list-unstyled">
+									<li class="pe-2 mb-3">
+										<a href="#" class="text-muted py-1 px-3 bg-light">culture</a>
+									</li>
+									<li class="pe-2 mb-3">
+										<a href="#" class="text-muted py-1 px-3 bg-light">featured</a>
+									</li>
+									<li class="pe-2 mb-3">
+										<a href="#" class="text-muted py-1 px-3 bg-light">tech</a>
+									</li>
+									<li class="pe-2 mb-3">
+										<a href="#" class="text-muted py-1 px-3 bg-light">culture</a>
+									</li>
+									<li>
+										<a href="#" class="text-muted py-1 px-3 bg-light">culture</a>
+									</li>
+								</ul>
+							</div>
+							<!-- Post Share -->
+							<div class="row">
+								<div class="col-md-auto pt-4 py-md-5">
+									<span class="text-uppercase fw-bold">Share.</span>
+								</div>
+								<div class="col-md">
+									<div class="r2f-social-share-2 py-4 d-flex justify-content-md-end">
+										<a href="#" class="text-white px-3 py-2 mb-3 me-2 rounded">
+											<span><i class="fab fa-facebook-f"></i></span>
+										</a>
+										<a href="#" class="text-white px-3 py-2 mb-3 me-2 rounded">
+											<span><i class="fab fa-twitter"></i></span>
+										</a>
+										<a href="#" class="text-white px-3 py-2 mb-3 me-2 rounded">
+											<span><i class="fab fa-pinterest-p"></i></span>
+										</a>
+										<a href="#" class="text-white px-3 py-2 mb-3 me-2 rounded">
+											<span><i class="fab fa-instagram"></i></i></span>
+										</a>
+										<a href="#" class="text-white px-3 py-2 mb-3 me-2 rounded">
+											<span><i class="fab fa-youtube"></i></span>
+										</a>
+										<a href="#" class="text-white px-3 py-2 mb-3 rounded">
+											<span><i class="fab fa-vimeo-v"></i></span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<!-- Share Social Media -->
+							<div class="border-top border-bottom py-3 mb-5">
+								<div class="row">
+									<div class="col border-end pe-3 text-end">
+										<p class="text-uppercase"><i class="fas fa-angle-left me-3"></i> Previous Article</p>
+										<a href="#">Harley Davidson: Bundle of Joy Crafted for Top Speed</a>
+									</div>
+									<div class="col ps-3">
+										<p class="text-uppercase">Next Article <i class="fas fa-angle-right ms-3"></i></p>
+										<a href="#">Harley Davidson: Bundle of Joy Crafted for Top Speed</a>
+									</div>
+								</div>
+							</div>
+							<!-- About Author -->
+							<div class="row mb-5">
+								<div class="col-3 col-md-2">
+									<img src="images/bella-doe.jpg" class="img-fluid rounded-circle">
+								</div>
+								<div class="r2f-author-title col">
+									<div class="d-flex justify-content-between pb-2">
+										<h2 class="h6 fw-bold">Shane Doe</h2>
+										<ul class="list-unstyled m-0 d-flex">
+											<li class="pe-3">
+												<a href="#"><i class="fas fa-home"></i></a>
+											</li>
+											<li class="pe-3">
+												<a href="#"><i class="fab fa-facebook-f"></i></a>
+											</li>
+											<li class="pe-3">
+												<a href="#"><i class="fab fa-twitter"></i></a>
+											</li>
+											<li class="pe-3">
+												<a href="#"><i class="fab fa-pinterest-p"></i></a>
+											</li>
+											<li>
+												<a href="#"><i class="fab fa-instagram"></i></a>
+											</li>
+										</ul>
+									</div>
+									<p>I am an Example Writer. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labored et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+								</div>
+							</div>
+							<!-- Related Post -->
+							<div>
+								<h2 class="h6 text-uppercase fw-bold px-3 py-2 mb-4 border-top border-bottom bg-light">Related Post</h2>
+								<div class="row">
+									<div class="col-lg-6">
+										<div class="r2f-post-wrap">
+											<div class="">
+												<img src="images/post-3_2.jpg" class="img-fluid">
+											</div>
+											<div class="pt-3 mb-4">
+												<h3 class="h5"><a href="#">Discovering Sydney’s See Attractions line</a></h3>
+												<p class="r2f-post-date"><a href="#" class="fst-italic text-muted">Nov 10, 2018</a></p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-6">
+										<div class="r2f-post-wrap">
+											<div class="">
+												<img src="images/post-3_2.jpg" class="img-fluid">
+											</div>
+											<div class="pt-3 mb-4">
+												<h3 class="h5"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h3>
+												<p class="r2f-post-date"><a href="#" class="fst-italic text-muted">Nov 10, 2018</a></p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-6">
+										<div class="r2f-post-wrap">
+											<div class="">
+												<img src="images/post-3_2.jpg" class="img-fluid">
+											</div>
+											<div class="pt-3 mb-4">
+												<h3 class="h5"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h3>
+												<p class="r2f-post-date"><a href="#" class="fst-italic text-muted">Nov 10, 2018</a></p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-6">
+										<div class="r2f-post-wrap">
+											<div class="">
+												<img src="images/post-3_2.jpg" class="img-fluid">
+											</div>
+											<div class="pt-3 mb-4">
+												<h3 class="h5"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h3>
+												<p class="r2f-post-date"><a href="#" class="fst-italic text-muted">Nov 10, 2018</a></p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 ps-lg-4">
+						<div class="r2r-news-right">
+							<div class="pb-5">
+								<a href="#">
+									<img src="images/consert-img.jpg" class="img-fluid">
+								</a>
+							</div>
+							<div class="pb-4">
+								<h2 class="h6 text-uppercase bg-dark text-white mb-4 px-3 py-2">Our Picks</h2>
+								<div class="border-bottom pb-4 mb-4">
+									<div class="row">
+										<div class="col-5 pb-3 pb-sm-0">
+											<img src="images/post-3_2.jpg" class="img-fluid">
+										</div>
+										<div class="col d-flex align-items-center">
+											<div class="r2f-post-wrap">
+												<h3 class="h5"><a href="#">Lorem ipsum dolor sit amet</a></h3>
+												<p class="r2f-post-date mb-0"><a href="#" class="fst-italic text-muted">Nov 10, 2018</a></p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="border-bottom pb-4 mb-4">
+									<div class="row">
+										<div class="col-5 pb-3 pb-sm-0">
+											<img src="images/post-3_2.jpg" class="img-fluid">
+										</div>
+										<div class="col d-flex align-items-center">
+											<div class="r2f-post-wrap">
+												<h3 class="h5"><a href="#">Lorem ipsum dolor sit amet</a></h3>
+												<p class="r2f-post-date mb-0"><a href="#" class="fst-italic text-muted">Nov 10, 2018</a></p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="border-bottom pb-4 mb-4">
+									<div class="row">
+										<div class="col-5 pb-3 pb-sm-0">
+											<img src="images/post-3_2.jpg" class="img-fluid">
+										</div>
+										<div class="col d-flex align-items-center">
+											<div class="r2f-post-wrap">
+												<h3 class="h5"><a href="#">Lorem ipsum dolor sit amet</a></h3>
+												<p class="r2f-post-date mb-0"><a href="#" class="fst-italic text-muted">Nov 10, 2018</a></p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="mb-4">
+									<div class="row">
+										<div class="col-5 pb-3 pb-sm-0">
+											<img src="images/post-3_2.jpg" class="img-fluid">
+										</div>
+										<div class="col d-flex align-items-center">
+											<div class="r2f-post-wrap">
+												<h3 class="h5"><a href="#">Lorem ipsum dolor sit amet</a></h3>
+												<p class="r2f-post-date mb-0"><a href="#" class="fst-italic text-muted">Nov 10, 2018</a></p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="r2f-news-social justify-content-between pb-4">
+								<a href="#" class="text-white px-4 py-3 mb-3">
+									<span><i class="fab fa-facebook-f"></i></span>
+									<span class="ps-2">10k</span>
+									<span class="ps-2">Facebook</span>
+								</a>
+								<a href="#" class="text-white px-4 py-3 mb-3">
+									<span><i class="fab fa-twitter"></i></span>
+									<span class="ps-2">10k</span>
+									<span class="ps-2">Twitter</span>
+								</a>
+								<a href="#" class="text-white px-4 py-3 mb-3">
+									<span><i class="fab fa-pinterest-p"></i></span>
+									<span class="ps-2">10k</span>
+									<span class="ps-2">Pinterest</span>
+								</a>
+								<a href="#" class="text-white px-4 py-3 mb-3">
+									<span><i class="fab fa-instagram"></i></i></span>
+									<span class="ps-2">10k</span>
+									<span class="ps-2">Instagram</span>
+								</a>
+								<a href="#" class="text-white px-4 py-3 mb-3">
+									<span><i class="fab fa-youtube"></i></span>
+									<span class="ps-2">10k</span>
+									<span class="ps-2">Youtube</span>
+								</a>
+								<a href="#" class="text-white px-4 py-3 mb-3">
+									<span><i class="fab fa-vimeo-v"></i></span>
+									<span class="ps-2">10k</span>
+									<span class="ps-2">Vimeo</span>
+								</a>
+							</div>
+							<div class="pb-5">
+								<h2 class="h6 text-uppercase bg-dark text-white mb-4 px-3 py-2">Don't miss</h2>
+								<div class="r2f-post-wrap">
+									<div class="position-relative">
+										<img src="images/post-3_2.jpg" class="img-fluid">
+										<p class="r2f-post-meta position-absolute m-0 p-0 text-uppercase "><a href="#" class="r2f-post-meta-fashion">Fashion</a></p>
+									</div>
+									<div class="pt-3 mb-4">
+										<h3 class="h4"><a href="#">Discovering Sydney’s See Attractions line</a></h3>
+										<p class="r2f-post-author mb-0"><i class="fas fa-user me-2"></i>By<a href="#">Jawn Staff</a> - <a href="#" class="fst-italic">Nov 10, 2018</a></p>
+									</div>
+								</div>
+								<div class="row pb-3">
+									<div class="col-5 pb-3 pb-sm-0">
+										<img src="images/post-3_2.jpg" class="img-fluid">
+									</div>
+									<div class="col d-flex align-items-center">
+										<div class="r2f-post-wrap">
+											<h3 class="h5"><a href="#">Lorem ipsum dolor sit amet</a></h3>
+											<p class="r2f-post-date mb-0"><a href="#" class="fst-italic text-muted">Nov 10, 2018</a></p>
+										</div>
+									</div>
+								</div>
+								<div class="row pb-3">
+									<div class="col-5 pb-3 pb-sm-0">
+										<img src="images/post-3_2.jpg" class="img-fluid">
+									</div>
+									<div class="col d-flex align-items-center">
+										<div class="r2f-post-wrap">
+											<h3 class="h5"><a href="#">Lorem ipsum dolor sit amet</a></h3>
+											<p class="r2f-post-date mb-0"><a href="#" class="fst-italic text-muted">Nov 10, 2018</a></p>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-5 pb-3 pb-sm-0">
+										<img src="images/post-3_2.jpg" class="img-fluid">
+									</div>
+									<div class="col d-flex align-items-center">
+										<div class="r2f-post-wrap">
+											<h3 class="h5"><a href="#">Lorem ipsum dolor sit amet</a></h3>
+											<p class="r2f-post-date mb-0"><a href="#" class="fst-italic text-muted">Nov 10, 2018</a></p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="r2f-form-wrap p-2">
+								<form class="p-5 border bg-white" action="" method="">
+									<p class="h4 fw-bold text-uppercase pb-4 text-dark text-center">Get the best viral stories straight into your inbox</p>
+									<div class="pb-3">
+										<input type="email" class="w-100 p-2 text-center border text-dark" id="" placeholder="Your email address">
+									</div>
+									<div class="pb-3">
+										<input type="submit" class="r2f-btn-global rounded w-100 py-2 fw-bold" name="" value="Subscribe">
+									</div>
+									<div class="form-check text-center">
+										<input type="checkbox" class="form-check-input" id="">
+										<label class="form-check-label text-muted" for="">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</label>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!-- Footer -->
+	<footer class="bg-dark pt-5 pb-4">
+		<div class="container">
+			<div class="r2f-footer-logo pb-3">
+				<a href="#" class="mx-auto"></a>
+			</div>
+			<div class="rft-social-icons pb-3">
+				<ul class="m-0 p-0 d-flex list-unstyled justify-content-center">
+					<li class="nav-item">
+						<a class="d-flex align-items-center justify-content-center" href="#"><i class="fab fa-facebook-f"></i></a>
+					</li>
+					<li class="nav-item">
+						<a class="d-flex align-items-center justify-content-center" href="#"><i class="fab fa-twitter"></i></a>
+					</li>
+					<li class="nav-item">
+						<a class="d-flex align-items-center justify-content-center" href="#"><i class="fab fa-instagram"></i></a>
+					</li>
+					<li class="nav-item">
+						<a class="d-flex align-items-center justify-content-center" href="#"><i class="fab fa-pinterest-p"></i></a>
+					</li>
+				</ul>
+			</div>
+			<div class="r2f-footer-menu pb-4">
+				<ul class="m-0 p-0 d-flex list-unstyled justify-content-center">
+					<li class="pe-3"><a href="#">Home</a></li>
+					<li class="pe-3"><a href="#">Health</a></li>
+					<li class="pe-3"><a href="#">Travel</a></li>
+					<li class="pe-3"><a href="#">Sports</a></li>
+					<li class="pe-3"><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+			<div>
+				<p class="text-white text-center"><span class="text-muted">@2021 Lorem ipsum dolor sit amet. </span>Lorem Ipsum</p>
+			</div>
+		</div>
+	</footer>
+	</div>
+	<div class="overlay"></div>
+	<!-- JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
